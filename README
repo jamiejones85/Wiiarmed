@@ -1,0 +1,38 @@
+Wiiarmed README
+
+Control the OWI Robotic Arm Edge (http://www.maplin.co.uk/robotic-arm-kit-with-usb-pc-interface-266257) using a wiimote.
+Using various gestures to control the different joints.
+
+Licence:
+
+Don't really know much about open source licences but wiiuse is GPL 3+ so I'll stick with that.
+
+Controls:
+
+Wiimote roll: Shoulder
+Wiimote pitch: Elbow
+Wiimote yaw (Needs SensorBar or IR leds): Base rotation
+
+Nunchuck pitch: Wrist
+
+Button B: LED
+BUTTON Z,C: Open Close Gripper
+
+Building:
+
+
+OSX:
+
+Install wiiuse: https://github.com/rpavlik/wiiuse
+Install libusb from mac ports.
+
+
+Linux:
+Should build with correct dependencies (wiiuse, libusb)
+
+Windows:
+On your own
+
+Wiimote connection issues:
+
+See https://github.com/rpavlik/wiiuse/blob/master/README.mkd
