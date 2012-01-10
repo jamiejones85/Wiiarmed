@@ -101,7 +101,10 @@ void stop_arm(libusb_device_handle *devh) {
 }
 
 void close_arm(libusb_device **devs, libusb_device_handle *devh) {
+	printf("close_arm start\n");
 	libusb_close(devh);
+	printf("close_arm close_device_list\n");
 	libusb_free_device_list(devs, 1);
 	libusb_exit(NULL);
+	printf("close_arm end\n");
 }

@@ -4,9 +4,9 @@
 CC = gcc
 CFLAGS = -g -Wall
 OBJECTS = wiiarmed.o owiarm.o
-INCFLAGS = -I /opt/local/include
-LDFLAGS = -L /opt/local/lib
-LIBS = -lusb-1.0 -lwiiuse
+INCFLAGS = -I /opt/local/include -I /usr/local/include
+LDFLAGS = -L /opt/local/lib -L /usr/local/lib
+LIBS = -lusb-1.0 -lwiic
 
 all: wiiarmed
 
